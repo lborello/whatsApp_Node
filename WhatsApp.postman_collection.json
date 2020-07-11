@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "b95ccfa5-9d09-455d-92cc-ab6b33c9d959",
+		"name": "WhatsApp",
+		"description": "Esta es una prueba de whatsApp Web ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/whatsapp/sendmessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\" : \"5492616651372@c.us\",\r\n    \"body\" : \"hola fede como estas muy bueno esto\"\r\n    \r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/whatsapp/sendmessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"whatsapp",
+						"sendmessage"
+					]
+				},
+				"description": "Para enviar mensaje"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/whatsapp/connect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/whatsapp/connect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"whatsapp",
+						"connect"
+					]
+				},
+				"description": "Es para conextarse"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
